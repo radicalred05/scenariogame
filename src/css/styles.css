@@ -1,0 +1,645 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(51, 52, 55);
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*media queries*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+/*main*/
+
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* modals */
+.keywordsModal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.keywords-content {
+  background-color: rgb(69, 69, 69);
+  margin: 0 auto;
+  padding: 5vmin;
+  width: 35%;
+  height: 65%;
+  z-index: 100;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.closeKeywords {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closeKeywords:hover,
+.closeKeywords:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*top*/
+
+.UM-banner {
+  background: rgb(225, 183, 21);
+  display: none;
+}
+
+.UM-content {
+  padding: -5px;
+  min-width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.UM-text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+}
+
+.UM-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.UM-text,
+.UM-close > span {
+  color: black;
+  font-weight: 500;
+  float: right;
+}
+
+/*UR banner*/
+
+.UR-banner {
+  background: rgb(225, 183, 21);
+  display: none;
+}
+
+.UR-content {
+  padding: -5px;
+  min-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.UR-text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+}
+
+.UR-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.UR-text,
+.UR-close > span {
+  color: black;
+  font-weight: 500;
+  float: right;
+}
+
+/*EDIT banner*/
+
+.EDIT-banner {
+  background: indianred;
+  display: none;
+}
+
+.EDIT-content {
+  padding: -5px;
+  min-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.EDIT-text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+}
+
+.EDIT-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.EDIT-text,
+.EDIT-close > span {
+  color: black;
+  font-weight: 500;
+  float: right;
+}
+
+/*NU banner*/
+
+.NU-banner {
+  background: green;
+  display: none;
+}
+
+.NU-content {
+  padding: -5px;
+  min-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.NU-text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+}
+
+.NU-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.NU-text,
+.NU-close > span {
+  color: black;
+  font-weight: 500;
+  float: right;
+}
+
+/*UC banner*/
+
+.UC-banner {
+  background: indianred;
+  display: none;
+}
+
+.UC-content {
+  padding: -5px;
+  min-width: 1090px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.UC-text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+}
+
+.UC-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.UC-text,
+.UC-close > span {
+  color: black;
+  font-weight: 500;
+  float: right;
+}
+
+/*BO banner*/
+
+.BO-banner {
+  background: indianred;
+  display: none;
+}
+
+.BO-content {
+  padding: -5px;
+  min-width: 1090px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.BO-text {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+}
+
+.BO-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
+
+.BO-text,
+.BO-close > span {
+  color: black;
+  font-weight: 500;
+  float: right;
+}
+
+.top {
+  margin: 0;
+  padding: 0;
+}
+
+.menubar {
+  background-image: linear-gradient(
+    to left,
+    rgb(64, 0, 144),
+    rgb(117, 91, 249)
+  );
+  width: 100%;
+  padding: 2.5vmin;
+  top: 0;
+  position: absolute;
+}
+
+.logo {
+  color: white;
+  font-size: 3.5vmin;
+  font-family: Lexend Deca, sans-serif;
+  text-align: center;
+  font-weight: 700;
+  text-shadow: -0.25vw 0.25vw rgb(0, 0, 0);
+  cursor: default;
+  margin: 0 auto;
+  display: grid;
+}
+
+.slogan {
+  color: white;
+  font-size: 1vmin;
+  text-align: center;
+  font-family: Lexend, sans-serif;
+  text-shadow: -0.09vw 0.09vw rgb(0, 0, 0);
+  cursor: default;
+  margin: 0 auto;
+}
+/*center*/
+
+.center {
+  margin: 0;
+  padding: 0;
+  display: grid;
+}
+
+.game {
+  width: 25vmin;
+  height: 50vmin;
+  padding: 25vh 45vw;
+  background-color: rgb(71, 72, 75);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.typeTitle {
+  max-width: 100%;
+  max-height: 100%;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: Lexend, sans-serif;
+  text-shadow: -0.09vw 0.09vw rgb(0, 0, 0);
+  font-weight: 600;
+  font-size: 4.5vmin;
+  margin: 0 auto;
+  padding: 0.65vmin;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -235%);
+  white-space: nowrap;
+}
+
+.typeDescription {
+  color: white;
+  font-family: Open Sans, sans-serif;
+  font-size: 1.45vmin;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  display: grid;
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 1vmin;
+  transform: translate(-50%, -170%);
+  white-space: nowrap;
+}
+
+#searchID {
+  display: grid;
+  vertical-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 2.5vmin;
+  height: 4.5vmin;
+  font-size: 1.9vmin;
+  border: 0.25vmin solid #dadada;
+  transform: translate(-50%, -65%);
+  font-family: sans-serif;
+  text-align: center;
+  border-radius: 0.5px;
+}
+
+.submitSearch {
+  border: none;
+  background-color: rgb(66, 133, 244);
+  width: 25vmin;
+  height: 5vmin;
+  padding: 1.5vmin;
+  vertical-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 55%);
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 2vmin;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  transition: 0.3s;
+}
+
+.submitSearch:hover {
+  background-color: rgb(80, 155, 255);
+}
+
+.submitSearch:active {
+  background-color: rgb(100, 175, 255);
+}
+
+.submitLogo {
+  padding: 0.25vmin;
+  display: grid;
+  justify-content: left;
+}
+
+.submitText {
+  padding: 1vmin;
+  font-size: 1.6vmin;
+}
+
+.errorHandler1 {
+  color: rgb(240, 240, 240);
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.175vmin;
+  position: fixed;
+  font-family: Open Sans, sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 500%);
+  text-align: center;
+  display: none;
+}
+
+.errorHandler2 {
+  color: rgb(240, 240, 240);
+  display: grid;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15vmin;
+  position: fixed;
+  font-family: Open Sans, sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 510%);
+  text-align: center;
+  display: none;
+}
+
+.containerSwitch {
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+  padding: 1.5vmin;
+  margin: 0 auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+}
+
+.coreSpeakBtn {
+  background-color: transparent;
+  border: none;
+  padding: 0.5vmin;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.coreSpeakBtn:hover {
+  background-color: rgb(90, 90, 90);
+}
+
+.coreSpeakBtn:active {
+  background-color: rgb(115, 115, 115);
+}
+
+.coreTypeBtn {
+  background-color: transparent;
+  border: none;
+  padding: 0.5vmin;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.coreTypeBtn:hover {
+  background-color: rgb(90, 90, 90);
+}
+
+.coreTypeBtn:active {
+  background-color: rgb(115, 115, 115);
+}
+
+input:focus {
+  outline-color: rgb(66, 133, 244);
+  border-color: rgb(66, 133, 244);
+  box-shadow: 0 0 25px rgb(66, 133, 244);
+}
+
+/*bottom*/
+
+.bottombar {
+  width: 100%;
+  background-color: rgb(117, 91, 249);
+  padding: 0.75vmin;
+  bottom: 0;
+  position: absolute;
+}
+
+.languagePrefBtn {
+  background-color: transparent;
+  border: none;
+  padding: 1vmin;
+  transition: 0.3s;
+  border-radius: 2px;
+  margin: 0 auto;
+  float: left;
+  z-index: 2;
+}
+
+.languagePrefBtn:hover {
+  background-color: rgb(135, 115, 255);
+  cursor: pointer;
+}
+
+.languageicon {
+  background-color: transparent;
+  border: none;
+  padding: 0.25vmin;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+.keywordsListBtn {
+  background-color: transparent;
+  border: none;
+  padding: 1vmin;
+  transition: 0.3s;
+  border-radius: 2px;
+  margin: 0 auto;
+  float: right;
+  z-index: 2;
+}
+
+.keywordsListBtn:hover {
+  background-color: rgb(135, 115, 255);
+  cursor: pointer;
+}
+
+.keywordsicon {
+  background-color: transparent;
+  border: none;
+  padding: 0.25vmin;
+  transition: 0.3s;
+  z-index: 2;
+}
+
+/*scenarios*/
+
+.adventureModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.adventure-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.adventureClose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.adventureClose:hover,
+.adventureClose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
