@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scenariogame</title>
+
+    <meta name="description" content="Anything can happen." />
+    <meta
+      name="keywords"
+      content="Scneario, happen, no reason, happen for no reason, scenario, Scenario, Scenario Game, one Scenario Game, One Scenario Game, One Scenario Video Game, weird Website, scenariogame, scenario Game, scenario game, scenariogame, ScenarioGame, SCENARIOGAME, scenariogame, scenario, scenarioGame, Anything, anything"
+    />
+
+    <meta name="author" content="John Doe" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+
+    <!-- font queries -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <noscript>
+      <style>
+        .main {
+          display: none;
+        }
+      </style>
+
+      <div
+        class="jsdisabled"
+        style="
+          background-color: rgb(51, 52, 55);
+          width: 100vw;
+          height: 100vh;
+          left: 0;
+          top: 0;
+          position: fixed;
+          box-sizing: border-box;
+          z-index: 99999999999999999;
+          font-family: 'Arial Rounded MT Bold', Arial, Helvetica Neue,
+            sans-serif;
+          color: rgb(0, 91, 187);
+          text-align: left;
+          margin: 0 auto;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          font-size: 3.75vmin;
+          overflow-x: none;
+          overflow-y: none;
+          overflow: hidden none;
+          padding-left: 20%;
+          padding-right: 20%;
+        "
+      >
+        :(
+        <br />
+        <br />
+        did you really think turning off javascript was a good idea?
+        <br />
+        <br />
+        by the way scenariogame uses ALOT of javascript. you should turn it on
+        for your browser. i recommend you turn it on for all of your browsers.
+        <br />
+        <br />
+        please turn it on for your browser so you can continue playing.
+      </div>
+
+      <script>
+        var thebar = document.getElementsByClassName("main");
+
+        $(document).bind("contextmenu", function (e) {
+          e.preventDefault();
+        });
+
+        $(document).keydown(function (e) {
+          if (e.which == 123) {
+            return false;
+          }
+        });
+
+        thebar.remove();
+      </script>
+    </noscript>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="modals">
+        <div id="keywordsModalID" class="keywordsModal">
+          <div class="keywords-content">
+            <span class="closeKeywords">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="top">
+        <div class="progressBar">
+          <div id="progress">
+            <div id="bar"></div>
+          </div>
+        </div>
+
+        <div class="bannerCenter">
+          <div class="UM-banner">
+            <div class="UM-content">
+              <div class="UM-text">
+                We've discovered a conflict. We will be under heavy maintenance
+                and will be back to normal ASAP.
+              </div>
+              <button class="UM-close" type="button">
+                <span class="material-icons">
+                  close
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="UR-banner">
+            <div class="UR-content">
+              <div class="UR-text">
+                We are currently undergoing review as we have found a bug in our
+                code. We will be back to normal ASAP.
+              </div>
+              <button class="UR-close" type="button">
+                <span class="material-icons">
+                  close
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="EDIT-banner">
+            <div class="EDIT-content">
+              <div class="EDIT-text">
+                We are currently editing our systems. We recommend you stay off
+                ScenarioType at this moment.
+              </div>
+              <button class="EDIT-close" type="button">
+                <span class="material-icons">
+                  close
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="NU-banner">
+            <div class="NU-content">
+              <div class="NU-text">
+                We've deployed the new update: 1.0. Check Updates for more
+                information.
+              </div>
+              <button class="NU-close" type="button">
+                <span class="material-icons">
+                  close
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="UC-banner">
+            <div class="UC-content">
+              <div class="UC-text">
+                We're under construction at this time. Be very careful playing
+                ScenarioType as you may encounter severe bugs.
+              </div>
+              <button class="UC-close" type="button">
+                <span class="material-icons">
+                  close
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <div class="BO-banner">
+            <div class="BO-content">
+              <div class="BO-text">
+                ScenarioType is not available at this time.
+              </div>
+              <button class="BO-close" type="button">
+                <span class="material-icons">
+                  close
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="notificationCenter"></div>
+
+        <div class="menubar">
+          <div class="logo" id="logoi">
+            Scenariogame
+            <div class="slogan">
+              Anything can happen.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="center">
+        <!--
+
+			<div class="switchGame">
+
+				<div class="containerSwitch" id="containerSwitchID">
+
+					<div class="speakPick">
+						<div class="speakPickBtn" id="pickBtn" onclick="switchSpeak()">
+							<button class="coreSpeakBtn" id="coreSpeakId">
+								<svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="white" class="bi bi-mic" viewBox="0 0 16 16">
+							  	<path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+							  	<path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<div class="typePick">
+						<div class="typePickBtn active" id="pickBtn" onclick="switchType()">
+							<button class="coreTypeBtn" id="coreTypeId" active>
+								<svg xmlns="http://www.w3.org/2000/svg" width="26" height="19" fill="white" class="bi bi-keyboard" viewBox="0 0 16 16">
+							  	<path d="M14 5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12zM2 4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H2z"/>
+							  	<path d="M13 10.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm0-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5 0A.25.25 0 0 1 8.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 8 8.75v-.5zm2 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25v-.5zm1 2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-5-2A.25.25 0 0 1 6.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 6 8.75v-.5zm-2 0A.25.25 0 0 1 4.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 4 8.75v-.5zm-2 0A.25.25 0 0 1 2.25 8h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 2 8.75v-.5zm11-2a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm-2 0A.25.25 0 0 1 9.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 9 6.75v-.5zm-2 0A.25.25 0 0 1 7.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 7 6.75v-.5zm-2 0A.25.25 0 0 1 5.25 6h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5A.25.25 0 0 1 5 6.75v-.5zm-3 0A.25.25 0 0 1 2.25 6h1.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-1.5A.25.25 0 0 1 2 6.75v-.5zm0 4a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5zm2 0a.25.25 0 0 1 .25-.25h5.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-5.5a.25.25 0 0 1-.25-.25v-.5z"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		-->
+
+        <div class="game">
+          <div
+            class="containerTypeGame"
+            id="containerTypeID"
+            style="display: block; transition: 0.3s; opacity: 1;"
+          >
+            <div class="typeGame">
+              <input
+                type="text"
+                id="searchID"
+                name="search"
+                size="46"
+              /><br /><br />
+              <button
+                class="submitSearch"
+                id="submitSearchID"
+                onclick="submitMethod()"
+              >
+                <div class="submitLogo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="0.7vw"
+                    height="1.55vh"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="submitText">
+                  Submit the scenario
+                </div>
+              </button>
+
+              <div class="errorHandler1" id="errHandler1">
+                Nice try. You thought something would happen. You have to enter
+                something in.
+              </div>
+
+              <div class="errorHandler2" id="errHandler2">
+                Keyword not found.
+              </div>
+            </div>
+            <div class="typeExternal">
+              <div class="typeTitle">
+                Scenariogame: Type Edition
+              </div>
+              <div class="typeDescription">
+                Anything (not everything) you type will happen right on your
+                screen. Good luck and have fun.
+                <br />
+                Warning: Be appropriate!
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="containerSpeakGame"
+            id="containerSpeakID"
+            style="display: none; transition: 0.3s; opacity: 0;"
+          >
+            <div class="speakGame">
+              <h1
+                style="
+                  color: white;
+                  position: fixed;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  font-size: 1.5vw;
+                "
+              >
+                Hey! Functionality for speaking is not available at this moment.
+              </h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="scenarios">
+          <!-- adventure-->
+          <div id="adventureModalID" class="adventureModal">
+            <div class="adventure-content">
+              <span class="adventureClose">&times;</span>
+              <p>Some text in the Modal..</p>
+            </div>
+          </div>
+
+          <!--end adventure-->
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="bottombar">
+          <div class="languagePref">
+            <button class="languagePrefBtn" id="languagePrefID">
+              <div class="languageicon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="19"
+                  fill="white"
+                  class="bi bi-globe2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+
+          <div class="keywordsList">
+            <button class="keywordsListBtn" id="keywordsListID">
+              <div class="keywordsicon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="19"
+                  fill="white"
+                  class="bi bi-command"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.5 2A1.5 1.5 0 0 1 5 3.5V5H3.5a1.5 1.5 0 1 1 0-3zM6 5V3.5A2.5 2.5 0 1 0 3.5 6H5v4H3.5A2.5 2.5 0 1 0 6 12.5V11h4v1.5a2.5 2.5 0 1 0 2.5-2.5H11V6h1.5A2.5 2.5 0 1 0 10 3.5V5H6zm4 1v4H6V6h4zm1-1V3.5A1.5 1.5 0 1 1 12.5 5H11zm0 6h1.5a1.5 1.5 0 1 1-1.5 1.5V11zm-6 0v1.5A1.5 1.5 0 1 1 3.5 11H5z"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="src/js/banner.js"></script>
+  <script src="src/js/modal.js"></script>
+  <script src="src/js/notification.js"></script>
+  <script src="src/js/main/api.js"></script>
+  <script src="src/js/main/submit.js"></script>
+  <script src="src/js/handler/cookiemod.js"></script>
+  <script src="src/js/handler/redirectmod.js"></script>
+  <script src="src/js/foundation/gameswitchf.js"></script>
+  <script src="src/js/foundation/progframe.js"></script>
+  <script src="src/js/modules/adventureMod.js"></script>
+  <script src="src/js/main/scenarios.js"></script>
+</html>
